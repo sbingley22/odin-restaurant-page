@@ -10,6 +10,36 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/dorota-semla.jpg":
+/*!******************************!*\
+  !*** ./src/dorota-semla.jpg ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/dorota-semla.jpg\");\n\n//# sourceURL=webpack://restaurant-page/./src/dorota-semla.jpg?");
+
+/***/ }),
+
+/***/ "./src/spencer-davis.jpg":
+/*!*******************************!*\
+  !*** ./src/spencer-davis.jpg ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/spencer-davis.jpg\");\n\n//# sourceURL=webpack://restaurant-page/./src/spencer-davis.jpg?");
+
+/***/ }),
+
+/***/ "./src/valeria-boltneva.jpg":
+/*!**********************************!*\
+  !*** ./src/valeria-boltneva.jpg ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/valeria-boltneva.jpg\");\n\n//# sourceURL=webpack://restaurant-page/./src/valeria-boltneva.jpg?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -26,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _loa
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   loadMainPage: () => (/* binding */ loadMainPage)\n/* harmony export */ });\nconst loadMainPage = () => {\n    const mainContainer = document.createElement(\"div\")\n    const headerContainer = document.createElement(\"div\")\n    const bodyContainer = document.createElement(\"div\")\n\n    mainContainer.id = \"main-container\"\n    headerContainer.id = \"header-container\"\n    bodyContainer.id = 'body-container'\n\n    const logoTitle = document.createElement(\"h1\")\n    logoTitle.textContent = \"Food for life\"\n\n    const restaurantInfo = document.createElement(\"p\")\n    restaurantInfo.textContent = 'We provide food for a lifetime of enjoyment. Live well, eat well.'\n\n    mainContainer.appendChild(headerContainer)\n    mainContainer.appendChild(bodyContainer)\n    headerContainer.appendChild(logoTitle)\n    bodyContainer.appendChild(restaurantInfo)\n\n    return mainContainer\n} \n\n\n\n//# sourceURL=webpack://restaurant-page/./src/load_page.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   loadMainPage: () => (/* binding */ loadMainPage)\n/* harmony export */ });\n/* harmony import */ var _dorota_semla_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dorota-semla.jpg */ \"./src/dorota-semla.jpg\");\n/* harmony import */ var _spencer_davis_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./spencer-davis.jpg */ \"./src/spencer-davis.jpg\");\n/* harmony import */ var _valeria_boltneva_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./valeria-boltneva.jpg */ \"./src/valeria-boltneva.jpg\");\n\n\n\n\nconst loadMainPage = () => {\n    const mainContainer = document.createElement(\"div\")\n    const headerContainer = document.createElement(\"div\")\n    const bodyContainer = document.createElement(\"div\")\n\n    mainContainer.id = \"main-container\"\n    headerContainer.id = \"header-container\"\n    bodyContainer.id = 'body-container'\n\n    const logoTitle = document.createElement(\"h1\")\n    logoTitle.textContent = \"Food for life\"\n\n    const restaurantInfo = document.createElement(\"p\")\n    restaurantInfo.textContent = 'We provide food for a lifetime of enjoyment. Live well, eat well.'\n\n    const dorotaImgElement = document.createElement(\"img\")\n    dorotaImgElement.src = _dorota_semla_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"]\n    const spencerImgElement = document.createElement(\"img\")\n    spencerImgElement.src = _spencer_davis_jpg__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\n    const valeriaImgElement = document.createElement(\"img\")\n    valeriaImgElement.src = _valeria_boltneva_jpg__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n\n    mainContainer.appendChild(headerContainer)\n    mainContainer.appendChild(bodyContainer)\n    headerContainer.appendChild(logoTitle)\n    bodyContainer.appendChild(restaurantInfo)\n    bodyContainer.appendChild(dorotaImgElement)\n    bodyContainer.appendChild(spencerImgElement)\n    bodyContainer.appendChild(valeriaImgElement)\n\n    return mainContainer\n} \n\n\n\n//# sourceURL=webpack://restaurant-page/./src/load_page.js?");
 
 /***/ })
 
@@ -69,6 +99,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -83,6 +125,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
