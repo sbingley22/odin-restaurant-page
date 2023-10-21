@@ -1,30 +1,32 @@
-import { loadHeader, loadMainPage, loadMenuPage, loadContactPage } from "./load_page";
+import {
+  loadHeader, loadMainPage, loadMenuPage, loadContactPage,
+} from './load_page';
 
 function removeBody() {
-    const body = document.querySelector('#body-container')
-    body.remove()
+  const body = document.querySelector('#body-container');
+  body.remove();
 }
-const content = document.querySelector('#content')
+const content = document.querySelector('#content');
 
-content.appendChild(loadHeader())
+content.appendChild(loadHeader());
 
-const home = document.querySelector('#home')
-const menu = document.querySelector('#menu')
-const contact = document.querySelector('#contact')
+const home = document.querySelector('#home');
+const menu = document.querySelector('#menu');
+const contact = document.querySelector('#contact');
 
-home.addEventListener("click", (e) => {
-    removeBody()
-    content.appendChild(loadMainPage())
-})
+home.addEventListener('click', () => {
+  removeBody();
+  content.appendChild(loadMainPage());
+});
 
-menu.addEventListener("click", (e) => {
-    removeBody()
-    content.appendChild(loadMenuPage())
-})
+menu.addEventListener('click', () => {
+  removeBody();
+  content.appendChild(loadMenuPage());
+});
 
-contact.addEventListener("click", (e) => {
-    removeBody()
-    content.appendChild(loadContactPage())
-})
+contact.addEventListener('click', () => {
+  removeBody();
+  content.appendChild(loadContactPage());
+});
 
-content.appendChild(loadMainPage())
+content.appendChild(loadMainPage());
